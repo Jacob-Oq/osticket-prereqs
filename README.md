@@ -80,10 +80,47 @@ This new folder will be used to extract all the contents from the PHP 7.3.8 (php
 ![setting up iis -12](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/a3c757aa-333b-4ef7-9048-a25e3596e29d)
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<br></br>
+
+Download and install VC_redist.x86.exe
+
+![setting up iis -13](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/9016ea04-f1d5-438e-890d-9bf5577ee30d)
+
+
+<br></br>
+
+![setting up iis -14](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/76ddb561-cf94-4d50-addf-8d2155344179)
+
+Once done, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi). Within the MySQL setup wizard, click "I accept the terms" 
+
+![setting up iis -15](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/13f5ca4a-627b-4a34-ade9-1946b4384b09)
+
+select a Typical install. 
+
+![setting up iis -16](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/1c6ec465-cb74-48bf-85a4-8d4e57304642)
+
+
+Install. 
+
+![setting up iis -17](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/76642bc8-fb5d-41f4-b568-e6d7e3092d55)
+
+
+Launch the Configuration Wizard after the installation. Click next.
+
+![setting up iis -18](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/a64cb9c8-9e6c-47ae-b36f-a2876d83a32e)
+
+![setting up iis -19](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/d440110c-a3b4-4b01-a5e6-c021f0d2492f)
+
+
+Select Standard Configuration and select Install As Windows Service and make sure Launch the MySQL Server automatically is checked. 
+
+![setting up iis -20](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/9e0cc47c-a31c-4fe8-929a-abd03c2cc107)
+
+![setting up iis -21](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/ccab1a56-988b-4100-b914-6b6b3efed506)
+
+For credentials, the username will be root and the password of your choosing. For these purposes, the credentials will be basic to where they can be easily guessed.
+
+![setting up iis -22](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/1a6c8c60-f160-40f8-8de0-e3b0fa9819d5)
+
+
+
