@@ -122,5 +122,98 @@ For credentials, the username will be root and the password of your choosing. Fo
 
 ![setting up iis -22](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/1a6c8c60-f160-40f8-8de0-e3b0fa9819d5)
 
+Click excecute on the next prompt and allow it to finish.
+
+![setting up iis -23](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/26fbd495-7db6-404c-82bb-9821f0792e28)
+
+
+Then click Finish.
+
+![setting up iis -24](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/478f5f04-a24a-4af5-a4d1-1d58a3856035)
+
+
+<br></br>
+
+Before installing osTicket, we need to configur IIS. Open IIS as an administrator. once it is open, select PHP Manager. 
+
+![setting up iis -25](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/9887cf46-b68a-4f37-9792-542ff2fe950b)
+
+
+Within PHP Manager, select Register new PHP version. 
+
+![setting up iis -26](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/d75ffa82-da84-40a7-87a6-492318aa4190)
+
+
+Select Browse and select the PHP CGI executable file (php-cgi.exe) within the PHP folder created earlier. 
+
+![setting up iis -27](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/7eb2327d-8636-47b8-b467-9ce919c877da)
+
+
+After registering the PHP version, reload the IIS server within the management console.
+
+<br></br>
+
+Download osTicket v1.15.8. Extract and copy the "upload" folder to the following path: c:\inetpub\wwwroot. Within the c:\inetpub\wwwroot folder, rename "upload" to "osTicket." Reload the IIS server afterwards. 
+
+![setting up iis -28](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/d4891bb6-648c-422e-9484-ac67d016899f)
+
+Within the IIS console, browse to Sites -> Default -> osTicket. 
+
+![setting up iis -29](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/7515d61d-c156-4d35-877a-be1c9fac78b3)
+
+
+Click "Browse *:80" and the installation page for osTicket will now show up. Some extensions are not enabled and they will be enabled with the IIS console before installing osTicket. 
+
+![setting up iis -30](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/ec92f770-132a-43fd-a6fc-ee9d4ca5d552)
+
+
+Click on PHP Manager while in the osTicket menu in IIS to begin the process. Click on "Enable or disable an extension." 
+
+![setting up iis -31](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/f5ca785e-7f9e-48f4-b669-cc9b8ff635f9)
+
+
+Enable the following extentions: php_imap.dll, php_intl.dll, php_opcache.dll. 
+
+![setting up iis -32](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/fe82b542-120e-41b6-b8a5-eb1f94cfbeb2)
+
+The osTicket installation page should now appear with all checks except APCu Extensions and Zend OP cache
+
+![setting up iis -33](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/8c99ba4b-055e-4803-bf98-08ceef01dff2)
+
+<br></br>
+
+Before continuing to install osTicket, from C:\inetpub\wwwroot\osTicket\include, rename ost-sampleconfig.php to ost-config.php. 
+
+![setting up iis -34](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/c0dc9b38-c5f5-4a31-9af6-76cec9b68922)
+
+![setting up iis -35](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/fc338145-df9b-41c6-96ee-0d70c6c40145)
+
+
+Next change the permissions to ost-config.php which was just created. Open its Properties and change the following permissions: Disable inheritence -> Remove All and New Permissions -> Everyone -> All. 
+
+![setting up iis -36](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/7f05bb40-e92d-48a9-9f51-220c768915df)
+
+![setting up iis -37](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/122e244f-9c66-4a2d-bb63-28259d58ab2f)
+
+![setting up iis -38](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/bf9c306a-75d0-42f7-a9c4-9ca9fbbbe2f4)
+
+![setting up iis -39](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/0b5a4644-0150-475e-b338-0dbbc97172d0)
+
+![setting up iis -40](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/054c117f-2a75-433e-8da5-3768972601a7)
+
+![setting up iis -41](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/4344c2d4-87a1-47b4-9e55-c20d871432d1)
+
+![setting up iis -42](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/c4dab821-8b96-4ad9-9611-72941eef385a)
+
+![setting up iis -43](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/097c083d-a1bf-4f2a-9c72-a02f4cf9c5b6)
+
+![setting up iis -44](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/4e293269-6b16-4f12-a4ce-d27abcf2a894)
+
+
+
+
+
+
+
 
 
