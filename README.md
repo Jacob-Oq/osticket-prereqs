@@ -5,9 +5,8 @@
 <h1>osTicket - Prerequisites and Installation</h1>
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
- https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
-
-
+you can find the necessary files <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">here!</a>
+ 
 
 <h2>Environments and Technologies Used</h2>
 
@@ -21,15 +20,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- A modern computer (Although I was able to do this running Windows 7 and once on Linux | Ubuntu just to try it)
+- A Microsoft Azure account if to use a virtual machine
+- Patience (Be sure to take your time and don't give in to frustrations. If something isn't working correctly double check and be sure a step didn't get skipped. This can take some time to get running and you may be tempted to rush things.)
+- Minimal distractions. Focus is key.
+- Maybe some backgorund music to help pass the time if you prefer
 
 <h2>Installation Steps</h2>
 
-Before installing any files, be sure to have Internet Information Services (IIS) enabled. OsTicket will be installed locally and it needs IIS in order to function. To turn on IIS, open the Control Panel. 
+If using a virtual machine be sure you are on the VM and not your main system. Then, before installing any files, be sure to have Internet Information Services (IIS) enabled. OsTicket will be installed locally and it needs IIS in order to function. To turn on IIS, open the Control Panel. 
 
 ![setting up iis -1](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/f08c96b9-2a08-4005-9f6c-841bd8dff76e)
 
@@ -209,8 +208,50 @@ Next change the permissions to ost-config.php which was just created. Open its P
 
 ![setting up iis -44](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/4e293269-6b16-4f12-a4ce-d27abcf2a894)
 
+<br></br>
+
+Download and install HeidiSQL. 
+
+![setting up iis -48](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/35c594ea-47b4-468e-9766-ed34fc4dfbd2)
+
+![setting up iis -49](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/63698bff-28fb-43c5-b9fc-e41d045e6a17)
+
+![setting up iis -50](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/68534ab6-17e0-4d88-afc8-d3f21f74150a)
+
+![setting up iis -51](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/47dc12f9-9c4d-4677-bc16-4d0787e82928)
+
+![setting up iis -52](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/fc1b80be-994c-4c43-9924-85f9c7310d55)
+
+![setting up iis -53](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/2e47d81a-1848-44d7-b2a2-4f768bdd4e91)
 
 
+Create a new session with HeidiSQL and enter the password used in the installation of MySQL earlier and within the new session, right-click on Unnamed and create a new database named osTicket. 
+
+![setting up iis -55](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/e2579227-206a-4e1b-9f4a-6b8718449432)
+
+![setting up iis -56](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/9eb1e9d3-d240-46a7-bf10-b9e8e799aa61)
+
+![setting up iis -57](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/89def1e4-3700-4844-96e2-a2c7c2132a9a)
+
+![setting up iis -58](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/68d1e74d-b5e8-4f66-b270-bc15f95ddaab)
+
+![setting up iis -59](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/914ad01e-eace-4161-857f-540248006c71)
+
+<br></br>
+
+Within osTicket browser window, enter the necessary details to set up osTicket. For the MySQL database, use the credentials used for MySQL and HeidiSQL. 
+
+![setting up iis -60](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/68fd2d89-e96c-45c8-a18f-8555231f526c)
+
+<br></br>
+
+After everything is done, osTicket should now be installed! 
+
+![setting up iis -61](https://github.com/Jacob-Oq/osticket-prereqs/assets/150084528/89875fc3-eb7a-4a72-b97b-aa65efd02d39)
+
+
+
+Before continuing to use osTicket, delete the setup folder found in C:\inetpub\wwwroot\osTicket. Then, return to C:\inetpub\wwwroot\osTicket\include and change the permissions of the ost-config.php file. The file should no longer have full access to Everyone. Revert the permissions to "Read" only. 
 
 
 
