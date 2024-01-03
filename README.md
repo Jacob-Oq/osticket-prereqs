@@ -21,7 +21,7 @@ you can find the necessary files <a href="https://drive.google.com/drive/u/2/fol
 <h2>List of Prerequisites</h2>
 
 - A modern computer (Although I was able to do this running Windows 7 and once on Linux | Ubuntu just to try it)
-- A Microsoft Azure account if to use a virtual machine
+- A Microsoft Azure account to use a virtual machine
 - Patience (Be sure to take your time and don't give in to frustrations. If something isn't working correctly double check and be sure a step didn't get skipped. This can take some time to get running and you may be tempted to rush things.)
 - Minimal distractions. Focus is key.
 - Maybe some backgorund music to help pass the time if you prefer
